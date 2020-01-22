@@ -220,54 +220,6 @@ Wire Notes Line
 	7750 675  7750 7700
 Text Notes 5675 6500 0    50   ~ 0
 Extra Hardware
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J3
-U 1 1 5BBDC449
-P 6000 6650
-F 0 "J3" H 6079 6692 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 6079 6601 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6000 6650 50  0001 C CNN
-F 3 "~" H 6000 6650 50  0001 C CNN
-	1    6000 6650
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5800 6650
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J5
-U 1 1 5BBF47C0
-P 6000 7000
-F 0 "J5" H 6079 7042 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 6079 6951 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6000 7000 50  0001 C CNN
-F 3 "~" H 6000 7000 50  0001 C CNN
-	1    6000 7000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5800 7000
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J7
-U 1 1 5BC3C160
-P 6975 6650
-F 0 "J7" H 7054 6692 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 7054 6601 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6975 6650 50  0001 C CNN
-F 3 "~" H 6975 6650 50  0001 C CNN
-	1    6975 6650
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6775 6650
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J9
-U 1 1 5BC3C16F
-P 6975 7000
-F 0 "J9" H 7054 7042 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 7054 6951 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6975 7000 50  0001 C CNN
-F 3 "~" H 6975 7000 50  0001 C CNN
-	1    6975 7000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6775 7000
 Wire Notes Line
 	7750 11550 5650 11550
 Text Notes 5675 8350 0    50   ~ 0
@@ -298,66 +250,6 @@ Wire Notes Line
 	7750 8250 7750 15275
 Text Notes 5675 14075 0    50   ~ 0
 Extra Hardware
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J13
-U 1 1 5BCD1D3A
-P 6000 14225
-F 0 "J13" H 6079 14267 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 6079 14176 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6000 14225 50  0001 C CNN
-F 3 "~" H 6000 14225 50  0001 C CNN
-	1    6000 14225
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5800 14225
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J17
-U 1 1 5BCD1D49
-P 6000 14575
-F 0 "J17" H 6079 14617 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 6079 14526 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6000 14575 50  0001 C CNN
-F 3 "~" H 6000 14575 50  0001 C CNN
-	1    6000 14575
-	1    0    0    -1  
-$EndComp
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J19
-U 1 1 5BCD1D50
-P 6000 14750
-F 0 "J19" H 6079 14792 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 6079 14701 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6000 14750 50  0001 C CNN
-F 3 "~" H 6000 14750 50  0001 C CNN
-	1    6000 14750
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5800 14750
-NoConn ~ 5800 14575
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J14
-U 1 1 5BCD1D5A
-P 6975 14225
-F 0 "J14" H 7054 14267 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 7054 14176 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6975 14225 50  0001 C CNN
-F 3 "~" H 6975 14225 50  0001 C CNN
-	1    6975 14225
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6775 14225
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J18
-U 1 1 5BCD1D69
-P 6975 14575
-F 0 "J18" H 7054 14617 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 7054 14526 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6975 14575 50  0001 C CNN
-F 3 "~" H 6975 14575 50  0001 C CNN
-	1    6975 14575
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6775 14575
 Text Notes 13050 7650 0    50   ~ 10
 LEFT HAND SCHEMATIC
 Text Notes 11100 15225 0    50   ~ 10
@@ -420,18 +312,6 @@ Wire Wire Line
 	2425 1650 2400 1650
 Wire Notes Line
 	5650 675  5650 7700
-NoConn ~ 5800 7175
-$Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J6
-U 1 1 5BBF48DE
-P 6000 7175
-F 0 "J6" H 6079 7217 50  0000 L CNN
-F 1 "Breakaway_Tabs" H 6079 7126 50  0000 L CNN
-F 2 "locallib:breakaway-mousebites" H 6000 7175 50  0001 C CNN
-F 3 "~" H 6000 7175 50  0001 C CNN
-	1    6000 7175
-	1    0    0    -1  
-$EndComp
 Connection ~ 1100 11550
 Connection ~ 1100 11350
 $Comp
@@ -4092,17 +3972,6 @@ Connection ~ 1575 3875
 Wire Wire Line
 	1575 3875 2425 3875
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5E3013F1
-P 6425 7375
-F 0 "H1" H 6525 7421 50  0000 L CNN
-F 1 "MountingHole" H 6525 7330 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6425 7375 50  0001 C CNN
-F 3 "~" H 6425 7375 50  0001 C CNN
-	1    6425 7375
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H2
 U 1 1 5E3013F7
 P 6425 7550
@@ -4179,4 +4048,111 @@ F 3 "~" H 7100 15150 50  0001 C CNN
 	1    7100 15150
 	1    0    0    -1  
 $EndComp
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J3
+U 1 1 5E2DC692
+P 6075 6625
+F 0 "J3" H 6154 6667 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 6576 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 6625 50  0001 C CNN
+F 3 "~" H 6075 6625 50  0001 C CNN
+	1    6075 6625
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 6625
+NoConn ~ 5875 6800
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J6
+U 1 1 5E2DC6A0
+P 6075 7150
+F 0 "J6" H 6154 7192 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 7101 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 7150 50  0001 C CNN
+F 3 "~" H 6075 7150 50  0001 C CNN
+	1    6075 7150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 7150
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J4
+U 1 1 5E2DC699
+P 6075 6800
+F 0 "J4" H 6154 6842 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 6751 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 6800 50  0001 C CNN
+F 3 "~" H 6075 6800 50  0001 C CNN
+	1    6075 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J5
+U 1 1 5E2DC6AF
+P 6075 6975
+F 0 "J5" H 6154 7017 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 6926 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 6975 50  0001 C CNN
+F 3 "~" H 6075 6975 50  0001 C CNN
+	1    6075 6975
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 6975
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E3013F1
+P 6425 7375
+F 0 "H1" H 6525 7421 50  0000 L CNN
+F 1 "MountingHole" H 6525 7330 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6425 7375 50  0001 C CNN
+F 3 "~" H 6425 7375 50  0001 C CNN
+	1    6425 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J7
+U 1 1 5E3F5C7F
+P 6075 14175
+F 0 "J7" H 6154 14217 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 14126 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 14175 50  0001 C CNN
+F 3 "~" H 6075 14175 50  0001 C CNN
+	1    6075 14175
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 14175
+NoConn ~ 5875 14350
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J10
+U 1 1 5E3F5C87
+P 6075 14700
+F 0 "J10" H 6154 14742 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 14651 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 14700 50  0001 C CNN
+F 3 "~" H 6075 14700 50  0001 C CNN
+	1    6075 14700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 14700
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J8
+U 1 1 5E3F5C8E
+P 6075 14350
+F 0 "J8" H 6154 14392 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 14301 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 14350 50  0001 C CNN
+F 3 "~" H 6075 14350 50  0001 C CNN
+	1    6075 14350
+	1    0    0    -1  
+$EndComp
+$Comp
+L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J9
+U 1 1 5E3F5C94
+P 6075 14525
+F 0 "J9" H 6154 14567 50  0000 L CNN
+F 1 "Breakaway_Tabs" H 6154 14476 50  0000 L CNN
+F 2 "locallib:breakaway-mousebites" H 6075 14525 50  0001 C CNN
+F 3 "~" H 6075 14525 50  0001 C CNN
+	1    6075 14525
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 14525
 $EndSCHEMATC

@@ -4046,7 +4046,7 @@ U 1 1 5E3C2492
 P 2975 14000
 F 0 "USB2" H 3082 14467 50  0000 C CNN
 F 1 "USB_A_SMT" H 3082 14376 50  0000 C CNN
-F 2 "CUI_UJ2-AH-4-SMT" H 2975 14000 50  0001 L BNN
+F 2 "locallib:CUI_UJ2-AH-4-SMT" H 2975 14000 50  0001 L BNN
 F 3 "MANUFACTURER RECOMMENDATIONS" H 2975 14000 50  0001 L BNN
 F 4 "1.01" H 2975 14000 50  0001 L BNN "Field4"
 F 5 "CUI INC" H 2975 14000 50  0001 L BNN "Field5"
@@ -4062,7 +4062,7 @@ U 1 1 5E4F36D0
 P 3000 6400
 F 0 "USB1" H 3107 6867 50  0000 C CNN
 F 1 "USB_A_SMT" H 3107 6776 50  0000 C CNN
-F 2 "CUI_UJ2-AH-4-SMT" H 3000 6400 50  0001 L BNN
+F 2 "locallib:CUI_UJ2-AH-4-SMT" H 3000 6400 50  0001 L BNN
 F 3 "MANUFACTURER RECOMMENDATIONS" H 3000 6400 50  0001 L BNN
 F 4 "1.01" H 3000 6400 50  0001 L BNN "Field4"
 F 5 "CUI INC" H 3000 6400 50  0001 L BNN "Field5"
@@ -4091,4 +4091,92 @@ Wire Wire Line
 Connection ~ 1575 3875
 Wire Wire Line
 	1575 3875 2425 3875
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E3013F1
+P 6425 7375
+F 0 "H1" H 6525 7421 50  0000 L CNN
+F 1 "MountingHole" H 6525 7330 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6425 7375 50  0001 C CNN
+F 3 "~" H 6425 7375 50  0001 C CNN
+	1    6425 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E3013F7
+P 6425 7550
+F 0 "H2" H 6525 7596 50  0000 L CNN
+F 1 "MountingHole" H 6525 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6425 7550 50  0001 C CNN
+F 3 "~" H 6425 7550 50  0001 C CNN
+	1    6425 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E3013FD
+P 7125 7375
+F 0 "H3" H 7225 7421 50  0000 L CNN
+F 1 "MountingHole" H 7225 7330 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7125 7375 50  0001 C CNN
+F 3 "~" H 7125 7375 50  0001 C CNN
+	1    7125 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E301403
+P 7125 7550
+F 0 "H4" H 7225 7596 50  0000 L CNN
+F 1 "MountingHole" H 7225 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7125 7550 50  0001 C CNN
+F 3 "~" H 7125 7550 50  0001 C CNN
+	1    7125 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5E329387
+P 6400 14975
+F 0 "H5" H 6500 15021 50  0000 L CNN
+F 1 "MountingHole" H 6500 14930 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6400 14975 50  0001 C CNN
+F 3 "~" H 6400 14975 50  0001 C CNN
+	1    6400 14975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5E32938D
+P 6400 15150
+F 0 "H6" H 6500 15196 50  0000 L CNN
+F 1 "MountingHole" H 6500 15105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6400 15150 50  0001 C CNN
+F 3 "~" H 6400 15150 50  0001 C CNN
+	1    6400 15150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5E329393
+P 7100 14975
+F 0 "H7" H 7200 15021 50  0000 L CNN
+F 1 "MountingHole" H 7200 14930 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7100 14975 50  0001 C CNN
+F 3 "~" H 7100 14975 50  0001 C CNN
+	1    7100 14975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 5E329399
+P 7100 15150
+F 0 "H8" H 7200 15196 50  0000 L CNN
+F 1 "MountingHole" H 7200 15105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7100 15150 50  0001 C CNN
+F 3 "~" H 7100 15150 50  0001 C CNN
+	1    7100 15150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
