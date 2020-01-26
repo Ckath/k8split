@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# +5V-power-Orbit-rescue
+# +5V-power-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF +5V-power-Orbit-rescue #PWR 0 0 Y Y 1 F P
+DEF +5V-power-Orbit-rescue-k8split-rescue-k8split-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+5V-power-Orbit-rescue" 0 140 50 H V C CNN
+F1 "+5V-power-Orbit-rescue-k8split-rescue-k8split-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# +5VA-power-Orbit-rescue
+# +5VA-power-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF +5VA-power-Orbit-rescue #PWR 0 0 Y Y 1 F P
+DEF +5VA-power-Orbit-rescue-k8split-rescue-k8split-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+5VA-power-Orbit-rescue" 0 140 50 H V C CNN
+F1 "+5VA-power-Orbit-rescue-k8split-rescue-k8split-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +31,11 @@ X +5VA 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# C_Small-Device-Orbit-rescue
+# C_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF C_Small-Device-Orbit-rescue C 0 10 N N 1 F N
+DEF C_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "C_Small-Device-Orbit-rescue" 10 -80 50 H V L CNN
+F1 "C_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -49,11 +49,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x01-Connector_Generic-Orbit-rescue
+# Conn_01x01-Connector_Generic-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF Conn_01x01-Connector_Generic-Orbit-rescue J 0 40 Y N 1 F N
+DEF Conn_01x01-Connector_Generic-Orbit-rescue-k8split-rescue-k8split-rescue J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Conn_01x01-Connector_Generic-Orbit-rescue" 0 -100 50 H V C CNN
+F1 "Conn_01x01-Connector_Generic-Orbit-rescue-k8split-rescue-k8split-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -66,11 +66,11 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Crystal_GND24_Small-Device-Orbit-rescue
+# Crystal_GND24_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF Crystal_GND24_Small-Device-Orbit-rescue Y 0 40 Y N 1 F N
+DEF Crystal_GND24_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue Y 0 40 Y N 1 F N
 F0 "Y" 50 175 50 H V L CNN
-F1 "Crystal_GND24_Small-Device-Orbit-rescue" 50 100 50 H V L CNN
+F1 "Crystal_GND24_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue" 50 100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -89,11 +89,11 @@ X 4 4 0 125 50 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# D_Small-Device-Orbit-rescue
+# D_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF D_Small-Device-Orbit-rescue D 0 10 N N 1 F N
+DEF D_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "D_Small-Device-Orbit-rescue" -150 -80 50 H V L CNN
+F1 "D_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue" -150 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -111,11 +111,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# GND-power-Orbit-rescue
+# GND-power-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF GND-power-Orbit-rescue #PWR 0 0 Y Y 1 F P
+DEF GND-power-Orbit-rescue-k8split-rescue-k8split-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND-power-Orbit-rescue" 0 -150 50 H V C CNN
+F1 "GND-power-Orbit-rescue-k8split-rescue-k8split-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -124,11 +124,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# GNDA-power-Orbit-rescue
+# GNDA-power-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF GNDA-power-Orbit-rescue #PWR 0 0 Y Y 1 F P
+DEF GNDA-power-Orbit-rescue-k8split-rescue-k8split-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GNDA-power-Orbit-rescue" 0 -150 50 H V C CNN
+F1 "GNDA-power-Orbit-rescue-k8split-rescue-k8split-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -137,11 +137,11 @@ X GNDA 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# R_Small-Device-Orbit-rescue
+# R_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF R_Small-Device-Orbit-rescue R 0 10 N N 1 F N
+DEF R_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "R_Small-Device-Orbit-rescue" 30 -40 50 H V L CNN
+F1 "R_Small-Device-Orbit-rescue-k8split-rescue-k8split-rescue" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -154,11 +154,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SW_Push-Switch-Orbit-rescue
+# SW_Push-Switch-Orbit-rescue-k8split-rescue-k8split-rescue
 #
-DEF SW_Push-Switch-Orbit-rescue SW 0 40 N N 1 F N
+DEF SW_Push-Switch-Orbit-rescue-k8split-rescue-k8split-rescue SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "SW_Push-Switch-Orbit-rescue" 0 -60 50 H V C CNN
+F1 "SW_Push-Switch-Orbit-rescue-k8split-rescue-k8split-rescue" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW

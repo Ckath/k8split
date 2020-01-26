@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR0102
+L power:GND #PWR0102
 U 1 1 5B8AA40A
 P 3400 4700
 F 0 "#PWR0102" H 3400 4450 50  0001 C CNN
@@ -27,18 +27,18 @@ $EndComp
 Wire Wire Line
 	3400 4650 3500 4650
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R25
+L Device:R_Small R25
 U 1 1 5B8AA492
 P 4600 3450
 F 0 "R25" V 4404 3450 50  0000 C CNN
 F 1 "10k" V 4495 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4600 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 3450 50  0001 C CNN
 F 3 "~" H 4600 3450 50  0001 C CNN
 	1    4600 3450
 	0    1    1    0   
 $EndComp
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR0103
+L power:GND #PWR0103
 U 1 1 5B8AA541
 P 4950 3450
 F 0 "#PWR0103" H 4950 3200 50  0001 C CNN
@@ -51,7 +51,7 @@ $EndComp
 Wire Wire Line
 	4950 3450 4700 3450
 $Comp
-L k8split-rescue:SW_Push-Switch-Orbit-rescue SW1
+L Switch:SW_Push SW1
 U 1 1 5B8AA746
 P 2125 1350
 F 0 "SW1" H 2125 1635 50  0000 C CNN
@@ -62,7 +62,7 @@ F 3 "" H 2125 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR0105
+L power:GND #PWR0105
 U 1 1 5B8AA7EC
 P 1725 1350
 F 0 "#PWR0105" H 1725 1100 50  0001 C CNN
@@ -75,7 +75,7 @@ $EndComp
 Wire Wire Line
 	1725 1350 1925 1350
 $Comp
-L k8split-rescue:Crystal_GND24_Small-Device-Orbit-rescue Y1
+L Device:Crystal_GND24_Small Y1
 U 1 1 5B8AA97A
 P 2525 1650
 F 0 "Y1" V 2479 1816 50  0000 L CNN
@@ -85,10 +85,6 @@ F 3 "~" H 2525 1650 50  0001 C CNN
 	1    2525 1650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2525 1550 2900 1550
-Wire Wire Line
-	2900 1750 2525 1750
 NoConn ~ 2900 1950
 Wire Wire Line
 	2650 1650 2650 1875
@@ -97,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 1875 2400 1650
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C1
+L Device:C_Small C1
 U 1 1 5B8AAE7A
 P 2175 1550
 F 0 "C1" V 1946 1550 50  0000 C CNN
@@ -108,7 +104,7 @@ F 3 "~" H 2175 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C2
+L Device:C_Small C2
 U 1 1 5B8AAEDF
 P 2175 1750
 F 0 "C2" V 1946 1750 50  0000 C CNN
@@ -119,21 +115,10 @@ F 3 "~" H 2175 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2275 1750 2525 1750
-Connection ~ 2525 1750
-Wire Wire Line
-	2525 1550 2275 1550
-Connection ~ 2525 1550
-Wire Wire Line
-	2075 1550 2075 1750
-Wire Wire Line
 	2075 1875 2400 1875
-Connection ~ 2075 1750
-Wire Wire Line
-	2075 1750 2075 1875
 Connection ~ 2400 1875
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR0106
+L power:GND #PWR0106
 U 1 1 5B8AB51E
 P 2075 1875
 F 0 "#PWR0106" H 2075 1625 50  0001 C CNN
@@ -143,13 +128,12 @@ F 3 "" H 2075 1875 50  0001 C CNN
 	1    2075 1875
 	1    0    0    -1  
 $EndComp
-Connection ~ 2075 1875
 Text GLabel 2900 2350 0    50   Input ~ 0
 D+
 Text GLabel 2900 2450 0    50   Input ~ 0
 D-
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C3
+L Device:C_Small C3
 U 1 1 5B8ABA26
 P 2450 2650
 F 0 "C3" V 2221 2650 50  0000 C CNN
@@ -162,7 +146,7 @@ $EndComp
 Wire Wire Line
 	2550 2650 2900 2650
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR0108
+L power:GND #PWR0108
 U 1 1 5B8AC00A
 P 2175 2650
 F 0 "#PWR0108" H 2175 2400 50  0001 C CNN
@@ -312,10 +296,8 @@ Wire Wire Line
 	2425 1650 2400 1650
 Wire Notes Line
 	5650 675  5650 7700
-Connection ~ 1100 11550
-Connection ~ 1100 11350
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C16
+L Device:C_Small C16
 U 1 1 5DBCB235
 P 1100 11450
 F 0 "C16" H 1192 11496 50  0000 L CNN
@@ -332,7 +314,7 @@ Wire Wire Line
 Wire Wire Line
 	2625 9725 2900 9725
 $Comp
-L k8split-rescue:+5VA-power-Orbit-rescue #PWR0144
+L power:+5VA #PWR0144
 U 1 1 5BF0A650
 P 1100 11350
 F 0 "#PWR0144" H 1100 11200 50  0001 C CNN
@@ -343,7 +325,7 @@ F 3 "" H 1100 11350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR0142
+L power:GNDA #PWR0142
 U 1 1 5BE970DC
 P 4950 11025
 F 0 "#PWR0142" H 4950 10775 50  0001 C CNN
@@ -354,7 +336,7 @@ F 3 "" H 4950 11025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:+5VA-power-Orbit-rescue #PWR0137
+L power:+5VA #PWR0137
 U 1 1 5BE91272
 P 3500 8625
 F 0 "#PWR0137" H 3500 8475 50  0001 C CNN
@@ -365,7 +347,7 @@ F 3 "" H 3500 8625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR0135
+L power:GNDA #PWR0135
 U 1 1 5BE8EB10
 P 3400 12275
 F 0 "#PWR0135" H 3400 12025 50  0001 C CNN
@@ -376,7 +358,7 @@ F 3 "" H 3400 12275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR0134
+L power:GNDA #PWR0134
 U 1 1 5BE8DF3D
 P 1100 11550
 F 0 "#PWR0134" H 1100 11300 50  0001 C CNN
@@ -387,7 +369,7 @@ F 3 "" H 1100 11550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR0133
+L power:GNDA #PWR0133
 U 1 1 5BE8DBEA
 P 2175 10225
 F 0 "#PWR0133" H 2175 9975 50  0001 C CNN
@@ -398,7 +380,7 @@ F 3 "" H 2175 10225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR0132
+L power:GNDA #PWR0132
 U 1 1 5BE8C729
 P 1725 8925
 F 0 "#PWR0132" H 1725 8675 50  0001 C CNN
@@ -408,9 +390,8 @@ F 3 "" H 1725 8925 50  0001 C CNN
 	1    1725 8925
 	1    0    0    -1  
 $EndComp
-Connection ~ 2075 9450
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR0131
+L power:GNDA #PWR0131
 U 1 1 5BE8C4E7
 P 2075 9450
 F 0 "#PWR0131" H 2075 9200 50  0001 C CNN
@@ -442,14 +423,8 @@ Wire Wire Line
 	2900 8700 2900 8925
 Text GLabel 2900 8700 1    50   Input ~ 0
 RESET-R
-Connection ~ 1350 11550
-Wire Wire Line
-	1100 11550 1350 11550
-Connection ~ 1350 11350
-Wire Wire Line
-	1100 11350 1350 11350
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C14
+L Device:C_Small C14
 U 1 1 5BCD17C3
 P 2475 11450
 F 0 "C14" H 2567 11496 50  0000 L CNN
@@ -460,7 +435,7 @@ F 3 "~" H 2475 11450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C11
+L Device:C_Small C11
 U 1 1 5BCD17AE
 P 1350 11450
 F 0 "C11" H 1442 11496 50  0000 L CNN
@@ -475,7 +450,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 10225 2900 10225
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C10
+L Device:C_Small C10
 U 1 1 5BCD179F
 P 2450 10225
 F 0 "C10" V 2221 10225 50  0000 C CNN
@@ -491,20 +466,9 @@ Text GLabel 2900 9925 0    50   Input ~ 0
 R-D+
 Connection ~ 2400 9450
 Wire Wire Line
-	2075 9325 2075 9450
-Connection ~ 2075 9325
-Wire Wire Line
 	2075 9450 2400 9450
-Wire Wire Line
-	2075 9125 2075 9325
-Connection ~ 2525 9125
-Wire Wire Line
-	2525 9125 2275 9125
-Connection ~ 2525 9325
-Wire Wire Line
-	2275 9325 2525 9325
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C9
+L Device:C_Small C9
 U 1 1 5BCD177F
 P 2175 9325
 F 0 "C9" V 1946 9325 50  0000 C CNN
@@ -515,7 +479,7 @@ F 3 "~" H 2175 9325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C8
+L Device:C_Small C8
 U 1 1 5BCD1778
 P 2175 9125
 F 0 "C8" V 1946 9125 50  0000 C CNN
@@ -532,12 +496,8 @@ Wire Wire Line
 Wire Wire Line
 	2650 9225 2650 9450
 NoConn ~ 2900 9525
-Wire Wire Line
-	2900 9325 2525 9325
-Wire Wire Line
-	2525 9125 2900 9125
 $Comp
-L k8split-rescue:Crystal_GND24_Small-Device-Orbit-rescue Y2
+L Device:Crystal_GND24_Small Y2
 U 1 1 5BCD176B
 P 2525 9225
 F 0 "Y2" V 2479 9391 50  0000 L CNN
@@ -550,7 +510,7 @@ $EndComp
 Wire Wire Line
 	1725 8925 1925 8925
 $Comp
-L k8split-rescue:SW_Push-Switch-Orbit-rescue SW2
+L Switch:SW_Push SW2
 U 1 1 5BCD175A
 P 2125 8925
 F 0 "SW2" H 2125 9210 50  0000 C CNN
@@ -563,12 +523,12 @@ $EndComp
 Wire Wire Line
 	4950 11025 4700 11025
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R67
+L Device:R_Small R67
 U 1 1 5BCD173E
 P 4600 11025
 F 0 "R67" V 4404 11025 50  0000 C CNN
 F 1 "10k" V 4495 11025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4600 11025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 11025 50  0001 C CNN
 F 3 "~" H 4600 11025 50  0001 C CNN
 	1    4600 11025
 	0    1    1    0   
@@ -619,7 +579,7 @@ F 3 "" H 8775 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D1
+L Device:D_Small D1
 U 1 1 5E835561
 P 9275 1675
 F 0 "D1" V 9321 1607 50  0000 R CNN
@@ -643,7 +603,7 @@ F 3 "" H 9200 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D7
+L Device:D_Small D7
 U 1 1 5E83556E
 P 9700 1675
 F 0 "D7" V 9746 1607 50  0000 R CNN
@@ -667,7 +627,7 @@ F 3 "" H 9625 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D13
+L Device:D_Small D13
 U 1 1 5E83557B
 P 10125 1675
 F 0 "D13" V 10171 1607 50  0000 R CNN
@@ -691,7 +651,7 @@ F 3 "" H 10050 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D19
+L Device:D_Small D19
 U 1 1 5E835588
 P 10550 1675
 F 0 "D19" V 10596 1607 50  0000 R CNN
@@ -715,7 +675,7 @@ F 3 "" H 10475 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D25
+L Device:D_Small D25
 U 1 1 5E835595
 P 10975 1675
 F 0 "D25" V 11021 1607 50  0000 R CNN
@@ -739,7 +699,7 @@ F 3 "" H 10900 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D31
+L Device:D_Small D31
 U 1 1 5E8355A2
 P 11400 1675
 F 0 "D31" V 11446 1607 50  0000 R CNN
@@ -763,7 +723,7 @@ F 3 "" H 8775 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D2
+L Device:D_Small D2
 U 1 1 5E8355AF
 P 9275 2300
 F 0 "D2" V 9321 2232 50  0000 R CNN
@@ -787,7 +747,7 @@ F 3 "" H 9200 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D8
+L Device:D_Small D8
 U 1 1 5E8355BC
 P 9700 2300
 F 0 "D8" V 9746 2232 50  0000 R CNN
@@ -811,7 +771,7 @@ F 3 "" H 9625 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D14
+L Device:D_Small D14
 U 1 1 5E8355C9
 P 10125 2300
 F 0 "D14" V 10171 2232 50  0000 R CNN
@@ -835,7 +795,7 @@ F 3 "" H 10050 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D20
+L Device:D_Small D20
 U 1 1 5E8355D6
 P 10550 2300
 F 0 "D20" V 10596 2232 50  0000 R CNN
@@ -859,7 +819,7 @@ F 3 "" H 10475 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D26
+L Device:D_Small D26
 U 1 1 5E8355E3
 P 10975 2300
 F 0 "D26" V 11021 2232 50  0000 R CNN
@@ -883,7 +843,7 @@ F 3 "" H 10900 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D32
+L Device:D_Small D32
 U 1 1 5E8355F0
 P 11400 2300
 F 0 "D32" V 11446 2232 50  0000 R CNN
@@ -907,7 +867,7 @@ F 3 "" H 8775 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D3
+L Device:D_Small D3
 U 1 1 5E8355FD
 P 9275 2925
 F 0 "D3" V 9321 2857 50  0000 R CNN
@@ -931,7 +891,7 @@ F 3 "" H 9200 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D9
+L Device:D_Small D9
 U 1 1 5E83560A
 P 9700 2925
 F 0 "D9" V 9746 2857 50  0000 R CNN
@@ -955,7 +915,7 @@ F 3 "" H 9625 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D15
+L Device:D_Small D15
 U 1 1 5E835617
 P 10125 2925
 F 0 "D15" V 10171 2857 50  0000 R CNN
@@ -979,7 +939,7 @@ F 3 "" H 10050 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D21
+L Device:D_Small D21
 U 1 1 5E835624
 P 10550 2925
 F 0 "D21" V 10596 2857 50  0000 R CNN
@@ -1003,7 +963,7 @@ F 3 "" H 10475 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D27
+L Device:D_Small D27
 U 1 1 5E835631
 P 10975 2925
 F 0 "D27" V 11021 2857 50  0000 R CNN
@@ -1027,7 +987,7 @@ F 3 "" H 10900 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D33
+L Device:D_Small D33
 U 1 1 5E83563E
 P 11400 2925
 F 0 "D33" V 11446 2857 50  0000 R CNN
@@ -1051,7 +1011,7 @@ F 3 "" H 8775 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D4
+L Device:D_Small D4
 U 1 1 5E83564B
 P 9275 3550
 F 0 "D4" V 9321 3482 50  0000 R CNN
@@ -1075,7 +1035,7 @@ F 3 "" H 9200 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D10
+L Device:D_Small D10
 U 1 1 5E835658
 P 9700 3550
 F 0 "D10" V 9746 3482 50  0000 R CNN
@@ -1099,7 +1059,7 @@ F 3 "" H 9625 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D16
+L Device:D_Small D16
 U 1 1 5E835665
 P 10125 3550
 F 0 "D16" V 10171 3482 50  0000 R CNN
@@ -1123,7 +1083,7 @@ F 3 "" H 10050 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D22
+L Device:D_Small D22
 U 1 1 5E835672
 P 10550 3550
 F 0 "D22" V 10596 3482 50  0000 R CNN
@@ -1147,7 +1107,7 @@ F 3 "" H 10475 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D28
+L Device:D_Small D28
 U 1 1 5E83567F
 P 10975 3550
 F 0 "D28" V 11021 3482 50  0000 R CNN
@@ -1171,7 +1131,7 @@ F 3 "" H 10900 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D34
+L Device:D_Small D34
 U 1 1 5E83568C
 P 11400 3550
 F 0 "D34" V 11446 3482 50  0000 R CNN
@@ -1249,74 +1209,6 @@ Wire Wire Line
 Connection ~ 11250 2625
 Wire Wire Line
 	11250 2625 11250 3250
-Wire Wire Line
-	11400 1775 10975 1775
-Wire Wire Line
-	9050 2400 9275 2400
-Connection ~ 9275 1775
-Wire Wire Line
-	9275 1775 9050 1775
-Connection ~ 9700 1775
-Wire Wire Line
-	9700 1775 9275 1775
-Connection ~ 10125 1775
-Wire Wire Line
-	10125 1775 9700 1775
-Connection ~ 10550 1775
-Wire Wire Line
-	10550 1775 10125 1775
-Connection ~ 10975 1775
-Wire Wire Line
-	10975 1775 10550 1775
-Connection ~ 9275 2400
-Wire Wire Line
-	9275 2400 9700 2400
-Connection ~ 9700 2400
-Wire Wire Line
-	9700 2400 10125 2400
-Connection ~ 10125 2400
-Wire Wire Line
-	10125 2400 10550 2400
-Connection ~ 10550 2400
-Wire Wire Line
-	10550 2400 10975 2400
-Connection ~ 10975 2400
-Wire Wire Line
-	10975 2400 11400 2400
-Wire Wire Line
-	11400 3650 10975 3650
-Connection ~ 9275 3650
-Wire Wire Line
-	9275 3650 9050 3650
-Connection ~ 9700 3650
-Wire Wire Line
-	9700 3650 9275 3650
-Connection ~ 10125 3650
-Wire Wire Line
-	10125 3650 9700 3650
-Connection ~ 10550 3650
-Wire Wire Line
-	10550 3650 10125 3650
-Connection ~ 10975 3650
-Wire Wire Line
-	10975 3650 10550 3650
-Wire Wire Line
-	9275 3025 9700 3025
-Connection ~ 9700 3025
-Wire Wire Line
-	9700 3025 10125 3025
-Connection ~ 10125 3025
-Wire Wire Line
-	10125 3025 10550 3025
-Connection ~ 10550 3025
-Wire Wire Line
-	10550 3025 10975 3025
-Connection ~ 10975 3025
-Wire Wire Line
-	10975 3025 11400 3025
-Connection ~ 9275 3025
-Wire Wire Line
-	9050 3025 9275 3025
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX37
 U 1 1 5E8356E9
@@ -1329,7 +1221,7 @@ F 3 "" H 11325 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D37
+L Device:D_Small D37
 U 1 1 5E8356EF
 P 11825 1675
 F 0 "D37" V 11871 1607 50  0000 R CNN
@@ -1353,7 +1245,7 @@ F 3 "" H 11325 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D38
+L Device:D_Small D38
 U 1 1 5E8356FC
 P 11825 2300
 F 0 "D38" V 11871 2232 50  0000 R CNN
@@ -1377,7 +1269,7 @@ F 3 "" H 11325 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D39
+L Device:D_Small D39
 U 1 1 5E835709
 P 11825 2925
 F 0 "D39" V 11871 2857 50  0000 R CNN
@@ -1401,7 +1293,7 @@ F 3 "" H 11325 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D40
+L Device:D_Small D40
 U 1 1 5E835716
 P 11825 3550
 F 0 "D40" V 11871 3482 50  0000 R CNN
@@ -1424,18 +1316,6 @@ Wire Wire Line
 Connection ~ 12100 2625
 Wire Wire Line
 	12100 2625 12100 2000
-Wire Wire Line
-	11825 1775 11400 1775
-Wire Wire Line
-	11400 2400 11825 2400
-Wire Wire Line
-	11825 3650 11400 3650
-Wire Wire Line
-	11400 3025 11825 3025
-Connection ~ 11400 1775
-Connection ~ 11400 2400
-Connection ~ 11400 3025
-Connection ~ 11400 3650
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX5
 U 1 1 5E83572C
@@ -1448,7 +1328,7 @@ F 3 "" H 8775 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D5
+L Device:D_Small D5
 U 1 1 5E835732
 P 9275 4175
 F 0 "D5" V 9321 4107 50  0000 R CNN
@@ -1472,7 +1352,7 @@ F 3 "" H 9200 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D11
+L Device:D_Small D11
 U 1 1 5E83573F
 P 9700 4175
 F 0 "D11" V 9746 4107 50  0000 R CNN
@@ -1496,7 +1376,7 @@ F 3 "" H 9625 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D17
+L Device:D_Small D17
 U 1 1 5E83574C
 P 10125 4175
 F 0 "D17" V 10171 4107 50  0000 R CNN
@@ -1520,7 +1400,7 @@ F 3 "" H 10050 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D23
+L Device:D_Small D23
 U 1 1 5E835759
 P 10550 4175
 F 0 "D23" V 10596 4107 50  0000 R CNN
@@ -1544,7 +1424,7 @@ F 3 "" H 10475 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D29
+L Device:D_Small D29
 U 1 1 5E835766
 P 10975 4175
 F 0 "D29" V 11021 4107 50  0000 R CNN
@@ -1568,7 +1448,7 @@ F 3 "" H 10900 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D35
+L Device:D_Small D35
 U 1 1 5E835773
 P 11400 4175
 F 0 "D35" V 11446 4107 50  0000 R CNN
@@ -1592,23 +1472,6 @@ Wire Wire Line
 	11675 3875 11675 3250
 Wire Wire Line
 	11250 3250 11250 3875
-Wire Wire Line
-	11400 4275 10975 4275
-Connection ~ 9275 4275
-Wire Wire Line
-	9275 4275 9050 4275
-Connection ~ 9700 4275
-Wire Wire Line
-	9700 4275 9275 4275
-Connection ~ 10125 4275
-Wire Wire Line
-	10125 4275 9700 4275
-Connection ~ 10550 4275
-Wire Wire Line
-	10550 4275 10125 4275
-Connection ~ 10975 4275
-Wire Wire Line
-	10975 4275 10550 4275
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX41
 U 1 1 5E83578B
@@ -1621,7 +1484,7 @@ F 3 "" H 11325 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D41
+L Device:D_Small D41
 U 1 1 5E835791
 P 11825 4175
 F 0 "D41" V 11871 4107 50  0000 R CNN
@@ -1635,9 +1498,6 @@ Wire Wire Line
 	11825 4075 11900 4075
 Wire Wire Line
 	12100 3875 12100 3250
-Wire Wire Line
-	11825 4275 11400 4275
-Connection ~ 11400 4275
 Connection ~ 9550 3250
 Connection ~ 9975 3250
 Connection ~ 10400 3250
@@ -1657,7 +1517,7 @@ F 3 "" H 8775 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D6
+L Device:D_Small D6
 U 1 1 5E8357A8
 P 9275 4800
 F 0 "D6" V 9321 4732 50  0000 R CNN
@@ -1681,7 +1541,7 @@ F 3 "" H 9200 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D12
+L Device:D_Small D12
 U 1 1 5E8357B5
 P 9700 4800
 F 0 "D12" V 9746 4732 50  0000 R CNN
@@ -1705,7 +1565,7 @@ F 3 "" H 9625 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D18
+L Device:D_Small D18
 U 1 1 5E8357C2
 P 10125 4800
 F 0 "D18" V 10171 4732 50  0000 R CNN
@@ -1729,7 +1589,7 @@ F 3 "" H 10050 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D24
+L Device:D_Small D24
 U 1 1 5E8357CF
 P 10550 4800
 F 0 "D24" V 10596 4732 50  0000 R CNN
@@ -1753,7 +1613,7 @@ F 3 "" H 10475 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D30
+L Device:D_Small D30
 U 1 1 5E8357DC
 P 10975 4800
 F 0 "D30" V 11021 4732 50  0000 R CNN
@@ -1777,7 +1637,7 @@ F 3 "" H 10900 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D36
+L Device:D_Small D36
 U 1 1 5E8357E9
 P 11400 4800
 F 0 "D36" V 11446 4732 50  0000 R CNN
@@ -1813,7 +1673,7 @@ F 3 "" H 11325 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D42
+L Device:D_Small D42
 U 1 1 5E8357FC
 P 11825 4800
 F 0 "D42" V 11871 4732 50  0000 R CNN
@@ -1846,7 +1706,7 @@ F 3 "" H 11750 1400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D43
+L Device:D_Small D43
 U 1 1 5E835811
 P 12250 1675
 F 0 "D43" V 12296 1607 50  0000 R CNN
@@ -1870,7 +1730,7 @@ F 3 "" H 11750 2025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D44
+L Device:D_Small D44
 U 1 1 5E83581E
 P 12250 2300
 F 0 "D44" V 12296 2232 50  0000 R CNN
@@ -1894,7 +1754,7 @@ F 3 "" H 11750 2650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D45
+L Device:D_Small D45
 U 1 1 5E83582B
 P 12250 2925
 F 0 "D45" V 12296 2857 50  0000 R CNN
@@ -1918,7 +1778,7 @@ F 3 "" H 11750 3275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D46
+L Device:D_Small D46
 U 1 1 5E835838
 P 12250 3550
 F 0 "D46" V 12296 3482 50  0000 R CNN
@@ -1941,14 +1801,6 @@ Wire Wire Line
 Connection ~ 12525 2625
 Wire Wire Line
 	12525 2625 12525 2000
-Wire Wire Line
-	12250 1775 11825 1775
-Wire Wire Line
-	11825 2400 12250 2400
-Wire Wire Line
-	12250 3650 11825 3650
-Wire Wire Line
-	11825 3025 12250 3025
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX47
 U 1 1 5E83584A
@@ -1961,7 +1813,7 @@ F 3 "" H 11750 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D47
+L Device:D_Small D47
 U 1 1 5E835850
 P 12250 4175
 F 0 "D47" V 12296 4107 50  0000 R CNN
@@ -1975,8 +1827,6 @@ Wire Wire Line
 	12250 4075 12325 4075
 Wire Wire Line
 	12525 3875 12525 3250
-Wire Wire Line
-	12250 4275 11825 4275
 Connection ~ 12525 3250
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX48
@@ -1990,7 +1840,7 @@ F 3 "" H 11750 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D48
+L Device:D_Small D48
 U 1 1 5E835860
 P 12250 4800
 F 0 "D48" V 12296 4732 50  0000 R CNN
@@ -2005,34 +1855,6 @@ Wire Wire Line
 Wire Wire Line
 	12525 4500 12525 3875
 Connection ~ 12525 3875
-Connection ~ 11825 1775
-Connection ~ 11825 2400
-Connection ~ 11825 3025
-Connection ~ 11825 3650
-Connection ~ 11825 4275
-Wire Wire Line
-	9025 4900 9275 4900
-Connection ~ 9275 4900
-Wire Wire Line
-	9275 4900 9700 4900
-Connection ~ 9700 4900
-Wire Wire Line
-	9700 4900 10125 4900
-Connection ~ 10125 4900
-Wire Wire Line
-	10125 4900 10550 4900
-Connection ~ 10550 4900
-Wire Wire Line
-	10550 4900 10975 4900
-Connection ~ 10975 4900
-Wire Wire Line
-	10975 4900 11400 4900
-Connection ~ 11400 4900
-Wire Wire Line
-	11400 4900 11825 4900
-Connection ~ 11825 4900
-Wire Wire Line
-	11825 4900 12250 4900
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX49
 U 1 1 5E867671
@@ -2045,7 +1867,7 @@ F 3 "" H 8900 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D49
+L Device:D_Small D49
 U 1 1 5E867677
 P 9400 9250
 F 0 "D49" V 9446 9182 50  0000 R CNN
@@ -2069,7 +1891,7 @@ F 3 "" H 9325 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D55
+L Device:D_Small D55
 U 1 1 5E867684
 P 9825 9250
 F 0 "D55" V 9871 9182 50  0000 R CNN
@@ -2093,7 +1915,7 @@ F 3 "" H 9750 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D61
+L Device:D_Small D61
 U 1 1 5E867691
 P 10250 9250
 F 0 "D61" V 10296 9182 50  0000 R CNN
@@ -2117,7 +1939,7 @@ F 3 "" H 10175 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D67
+L Device:D_Small D67
 U 1 1 5E86769E
 P 10675 9250
 F 0 "D67" V 10721 9182 50  0000 R CNN
@@ -2141,7 +1963,7 @@ F 3 "" H 8900 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D50
+L Device:D_Small D50
 U 1 1 5E8676C5
 P 9400 9875
 F 0 "D50" V 9446 9807 50  0000 R CNN
@@ -2165,7 +1987,7 @@ F 3 "" H 9325 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D56
+L Device:D_Small D56
 U 1 1 5E8676D2
 P 9825 9875
 F 0 "D56" V 9871 9807 50  0000 R CNN
@@ -2189,7 +2011,7 @@ F 3 "" H 9750 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D62
+L Device:D_Small D62
 U 1 1 5E8676DF
 P 10250 9875
 F 0 "D62" V 10296 9807 50  0000 R CNN
@@ -2213,7 +2035,7 @@ F 3 "" H 10175 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D68
+L Device:D_Small D68
 U 1 1 5E8676EC
 P 10675 9875
 F 0 "D68" V 10721 9807 50  0000 R CNN
@@ -2237,7 +2059,7 @@ F 3 "" H 8900 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D51
+L Device:D_Small D51
 U 1 1 5E867713
 P 9400 10500
 F 0 "D51" V 9446 10432 50  0000 R CNN
@@ -2261,7 +2083,7 @@ F 3 "" H 9325 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D57
+L Device:D_Small D57
 U 1 1 5E867720
 P 9825 10500
 F 0 "D57" V 9871 10432 50  0000 R CNN
@@ -2285,7 +2107,7 @@ F 3 "" H 9750 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D63
+L Device:D_Small D63
 U 1 1 5E86772D
 P 10250 10500
 F 0 "D63" V 10296 10432 50  0000 R CNN
@@ -2309,7 +2131,7 @@ F 3 "" H 10175 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D69
+L Device:D_Small D69
 U 1 1 5E86773A
 P 10675 10500
 F 0 "D69" V 10721 10432 50  0000 R CNN
@@ -2333,7 +2155,7 @@ F 3 "" H 8900 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D52
+L Device:D_Small D52
 U 1 1 5E867761
 P 9400 11125
 F 0 "D52" V 9446 11057 50  0000 R CNN
@@ -2357,7 +2179,7 @@ F 3 "" H 9325 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D58
+L Device:D_Small D58
 U 1 1 5E86776E
 P 9825 11125
 F 0 "D58" V 9871 11057 50  0000 R CNN
@@ -2381,7 +2203,7 @@ F 3 "" H 9750 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D64
+L Device:D_Small D64
 U 1 1 5E86777B
 P 10250 11125
 F 0 "D64" V 10296 11057 50  0000 R CNN
@@ -2405,7 +2227,7 @@ F 3 "" H 10175 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D70
+L Device:D_Small D70
 U 1 1 5E867788
 P 10675 11125
 F 0 "D70" V 10721 11057 50  0000 R CNN
@@ -2461,50 +2283,6 @@ Wire Wire Line
 Connection ~ 10525 10200
 Wire Wire Line
 	10525 10200 10525 10825
-Wire Wire Line
-	9175 9975 9400 9975
-Connection ~ 9400 9350
-Wire Wire Line
-	9400 9350 9175 9350
-Connection ~ 9825 9350
-Wire Wire Line
-	9825 9350 9400 9350
-Connection ~ 10250 9350
-Wire Wire Line
-	10250 9350 9825 9350
-Wire Wire Line
-	10675 9350 10250 9350
-Connection ~ 9400 9975
-Wire Wire Line
-	9400 9975 9825 9975
-Connection ~ 9825 9975
-Wire Wire Line
-	9825 9975 10250 9975
-Connection ~ 10250 9975
-Wire Wire Line
-	10250 9975 10675 9975
-Connection ~ 9400 11225
-Wire Wire Line
-	9400 11225 9175 11225
-Connection ~ 9825 11225
-Wire Wire Line
-	9825 11225 9400 11225
-Connection ~ 10250 11225
-Wire Wire Line
-	10250 11225 9825 11225
-Wire Wire Line
-	10675 11225 10250 11225
-Wire Wire Line
-	9400 10600 9825 10600
-Connection ~ 9825 10600
-Wire Wire Line
-	9825 10600 10250 10600
-Connection ~ 10250 10600
-Wire Wire Line
-	10250 10600 10675 10600
-Connection ~ 9400 10600
-Wire Wire Line
-	9175 10600 9400 10600
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX53
 U 1 1 5E867842
@@ -2517,7 +2295,7 @@ F 3 "" H 8900 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D53
+L Device:D_Small D53
 U 1 1 5E867848
 P 9400 11750
 F 0 "D53" V 9446 11682 50  0000 R CNN
@@ -2541,7 +2319,7 @@ F 3 "" H 9325 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D59
+L Device:D_Small D59
 U 1 1 5E867855
 P 9825 11750
 F 0 "D59" V 9871 11682 50  0000 R CNN
@@ -2565,7 +2343,7 @@ F 3 "" H 9750 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D65
+L Device:D_Small D65
 U 1 1 5E867862
 P 10250 11750
 F 0 "D65" V 10296 11682 50  0000 R CNN
@@ -2589,7 +2367,7 @@ F 3 "" H 10175 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D71
+L Device:D_Small D71
 U 1 1 5E86786F
 P 10675 11750
 F 0 "D71" V 10721 11682 50  0000 R CNN
@@ -2609,17 +2387,6 @@ Wire Wire Line
 	10950 11450 10950 10825
 Wire Wire Line
 	10525 10825 10525 11450
-Connection ~ 9400 11850
-Wire Wire Line
-	9400 11850 9175 11850
-Connection ~ 9825 11850
-Wire Wire Line
-	9825 11850 9400 11850
-Connection ~ 10250 11850
-Wire Wire Line
-	10250 11850 9825 11850
-Wire Wire Line
-	10675 11850 10250 11850
 Connection ~ 9675 10825
 Connection ~ 10100 10825
 Connection ~ 10525 10825
@@ -2636,7 +2403,7 @@ F 3 "" H 8900 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D54
+L Device:D_Small D54
 U 1 1 5E8678BE
 P 9400 12375
 F 0 "D54" V 9446 12307 50  0000 R CNN
@@ -2660,7 +2427,7 @@ F 3 "" H 9325 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D60
+L Device:D_Small D60
 U 1 1 5E8678CB
 P 9825 12375
 F 0 "D60" V 9871 12307 50  0000 R CNN
@@ -2684,7 +2451,7 @@ F 3 "" H 9750 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D66
+L Device:D_Small D66
 U 1 1 5E8678D8
 P 10250 12375
 F 0 "D66" V 10296 12307 50  0000 R CNN
@@ -2708,7 +2475,7 @@ F 3 "" H 10175 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D72
+L Device:D_Small D72
 U 1 1 5E8678E5
 P 10675 12375
 F 0 "D72" V 10721 12307 50  0000 R CNN
@@ -2732,17 +2499,6 @@ Connection ~ 9675 11450
 Connection ~ 10100 11450
 Connection ~ 10525 11450
 Connection ~ 10950 11450
-Wire Wire Line
-	9150 12475 9400 12475
-Connection ~ 9400 12475
-Wire Wire Line
-	9400 12475 9825 12475
-Connection ~ 9825 12475
-Wire Wire Line
-	9825 12475 10250 12475
-Connection ~ 10250 12475
-Wire Wire Line
-	10250 12475 10675 12475
 Text GLabel 4100 2950 2    50   Input ~ 0
 COL7
 Text GLabel 4100 1750 2    50   Input ~ 0
@@ -2797,7 +2553,7 @@ F 3 "" H 5350 8625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:+5VA-power-Orbit-rescue #PWR01
+L power:+5VA #PWR01
 U 1 1 5E0CB31E
 P 6525 8675
 F 0 "#PWR01" H 6525 8525 50  0001 C CNN
@@ -2808,7 +2564,7 @@ F 3 "" H 6525 8675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR02
+L power:GNDA #PWR02
 U 1 1 5E0CD692
 P 6525 9575
 F 0 "#PWR02" H 6525 9325 50  0001 C CNN
@@ -2854,7 +2610,7 @@ MISO
 Wire Wire Line
 	2325 8925 2900 8925
 $Comp
-L k8split-rescue:+5VA-power-Orbit-rescue #PWR05
+L power:+5VA #PWR05
 U 1 1 5E1FB44E
 P 6650 10625
 F 0 "#PWR05" H 6650 10475 50  0001 C CNN
@@ -2865,29 +2621,29 @@ F 3 "" H 6650 10625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R2
+L Device:R_Small R2
 U 1 1 5E1FB454
 P 6650 10725
 F 0 "R2" H 6454 10725 50  0000 C CNN
 F 1 "10k" V 6545 10725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 10725 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 10725 50  0001 C CNN
 F 3 "~" H 6650 10725 50  0001 C CNN
 	1    6650 10725
 	-1   0    0    1   
 $EndComp
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R1
+L Device:R_Small R1
 U 1 1 5E27879D
 P 6700 3200
 F 0 "R1" H 6504 3200 50  0000 C CNN
 F 1 "10k" V 6595 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 6700 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6700 3200 50  0001 C CNN
 F 3 "~" H 6700 3200 50  0001 C CNN
 	1    6700 3200
 	-1   0    0    1   
 $EndComp
 $Comp
-L k8split-rescue:+5V-power-Orbit-rescue #PWR03
+L power:+5V #PWR03
 U 1 1 5E2A9BD8
 P 6625 1075
 F 0 "#PWR03" H 6625 925 50  0001 C CNN
@@ -2898,7 +2654,7 @@ F 3 "" H 6625 1075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:+5V-power-Orbit-rescue #PWR06
+L power:+5V #PWR06
 U 1 1 5E2AAE05
 P 6700 3100
 F 0 "#PWR06" H 6700 2950 50  0001 C CNN
@@ -2911,7 +2667,7 @@ $EndComp
 Text GLabel 6700 3300 3    50   Input ~ 0
 RESET
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR04
+L power:GND #PWR04
 U 1 1 5E2B2EFA
 P 6625 1975
 F 0 "#PWR04" H 6625 1725 50  0001 C CNN
@@ -2934,7 +2690,7 @@ Reset Pullup
 Text GLabel 6650 10825 3    50   Input ~ 0
 RESET-R
 $Comp
-L k8split-rescue:+5V-power-Orbit-rescue #PWR08
+L power:+5V #PWR08
 U 1 1 5E4A34D1
 P 3850 6200
 F 0 "#PWR08" H 3850 6050 50  0001 C CNN
@@ -2945,12 +2701,12 @@ F 3 "" H 3850 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R4
+L Device:R_Small R4
 U 1 1 5E4A5B44
 P 3650 6400
 F 0 "R4" V 3700 6275 50  0000 C CNN
 F 1 "22" V 3650 6400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3650 6400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3650 6400 50  0001 C CNN
 F 3 "~" H 3650 6400 50  0001 C CNN
 	1    3650 6400
 	0    1    1    0   
@@ -2960,7 +2716,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 6300 3400 6300
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR07
+L power:GND #PWR07
 U 1 1 5E551AFE
 P 3400 6700
 F 0 "#PWR07" H 3400 6450 50  0001 C CNN
@@ -2973,23 +2729,23 @@ $EndComp
 Wire Wire Line
 	3850 6200 3400 6200
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R5
+L Device:R_Small R5
 U 1 1 5E7FC5CC
 P 3625 13900
 F 0 "R5" V 3575 13775 50  0000 C CNN
 F 1 "22" V 3625 13900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3625 13900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3625 13900 50  0001 C CNN
 F 3 "~" H 3625 13900 50  0001 C CNN
 	1    3625 13900
 	0    1    1    0   
 $EndComp
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R6
+L Device:R_Small R6
 U 1 1 5E7FC5D2
 P 3625 14000
 F 0 "R6" V 3675 13875 50  0000 C CNN
 F 1 "22" V 3625 14000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3625 14000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3625 14000 50  0001 C CNN
 F 3 "~" H 3625 14000 50  0001 C CNN
 	1    3625 14000
 	0    1    1    0   
@@ -3001,7 +2757,7 @@ Wire Wire Line
 Wire Wire Line
 	3825 13800 3375 13800
 $Comp
-L k8split-rescue:+5VA-power-Orbit-rescue #PWR010
+L power:+5VA #PWR010
 U 1 1 5E826AF2
 P 3825 13800
 F 0 "#PWR010" H 3825 13650 50  0001 C CNN
@@ -3012,7 +2768,7 @@ F 3 "" H 3825 13800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:GNDA-power-Orbit-rescue #PWR09
+L power:GNDA #PWR09
 U 1 1 5E826F10
 P 3375 14300
 F 0 "#PWR09" H 3375 14050 50  0001 C CNN
@@ -3050,18 +2806,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    3500 2850
 	1    0    0    -1  
 $EndComp
-Connection ~ 1300 3875
-Wire Wire Line
-	1050 3875 1300 3875
-Connection ~ 1300 3675
-Wire Wire Line
-	1050 3675 1300 3675
 Wire Wire Line
 	2625 2150 2900 2150
-Connection ~ 1050 3875
-Connection ~ 1050 3675
 $Comp
-L k8split-rescue:GND-power-Orbit-rescue #PWR0110
+L power:GND #PWR0110
 U 1 1 5B8AD913
 P 1050 3875
 F 0 "#PWR0110" H 1050 3625 50  0001 C CNN
@@ -3072,7 +2820,7 @@ F 3 "" H 1050 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:+5V-power-Orbit-rescue #PWR0109
+L power:+5V #PWR0109
 U 1 1 5B8AD51B
 P 1050 3675
 F 0 "#PWR0109" H 1050 3525 50  0001 C CNN
@@ -3083,7 +2831,7 @@ F 3 "" H 1050 3675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C15
+L Device:C_Small C15
 U 1 1 5DBCABEF
 P 1050 3775
 F 0 "C15" H 1142 3821 50  0000 L CNN
@@ -3094,7 +2842,7 @@ F 3 "~" H 1050 3775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C4
+L Device:C_Small C4
 U 1 1 5B8AC81A
 P 1300 3775
 F 0 "C4" H 1392 3821 50  0000 L CNN
@@ -3105,7 +2853,7 @@ F 3 "~" H 1300 3775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:+5V-power-Orbit-rescue #PWR0101
+L power:+5V #PWR0101
 U 1 1 5B8AA3BD
 P 3500 1050
 F 0 "#PWR0101" H 3500 900 50  0001 C CNN
@@ -3116,7 +2864,7 @@ F 3 "" H 3500 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:+5V-power-Orbit-rescue #PWR0104
+L power:+5V #PWR0104
 U 1 1 5E94DF4A
 P 2625 2150
 F 0 "#PWR0104" H 2625 2000 50  0001 C CNN
@@ -3130,7 +2878,7 @@ Wire Wire Line
 	3400 1050 3500 1050
 Connection ~ 3500 1050
 $Comp
-L k8split-rescue:+5VA-power-Orbit-rescue #PWR0107
+L power:+5VA #PWR0107
 U 1 1 5EA02F95
 P 2625 9725
 F 0 "#PWR0107" H 2625 9575 50  0001 C CNN
@@ -3155,7 +2903,7 @@ F 3 "" H 10600 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D73
+L Device:D_Small D73
 U 1 1 5E19FD9F
 P 11100 9250
 F 0 "D73" V 11146 9182 50  0000 R CNN
@@ -3179,7 +2927,7 @@ F 3 "" H 11025 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D79
+L Device:D_Small D79
 U 1 1 5E19FDAC
 P 11525 9250
 F 0 "D79" V 11571 9182 50  0000 R CNN
@@ -3203,7 +2951,7 @@ F 3 "" H 10600 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D74
+L Device:D_Small D74
 U 1 1 5E19FDB9
 P 11100 9875
 F 0 "D74" V 11146 9807 50  0000 R CNN
@@ -3227,7 +2975,7 @@ F 3 "" H 11025 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D80
+L Device:D_Small D80
 U 1 1 5E19FDC6
 P 11525 9875
 F 0 "D80" V 11571 9807 50  0000 R CNN
@@ -3251,7 +2999,7 @@ F 3 "" H 10600 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D75
+L Device:D_Small D75
 U 1 1 5E19FDD3
 P 11100 10500
 F 0 "D75" V 11146 10432 50  0000 R CNN
@@ -3275,7 +3023,7 @@ F 3 "" H 11025 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D81
+L Device:D_Small D81
 U 1 1 5E19FDE0
 P 11525 10500
 F 0 "D81" V 11571 10432 50  0000 R CNN
@@ -3299,7 +3047,7 @@ F 3 "" H 10600 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D76
+L Device:D_Small D76
 U 1 1 5E19FDED
 P 11100 11125
 F 0 "D76" V 11146 11057 50  0000 R CNN
@@ -3323,7 +3071,7 @@ F 3 "" H 11025 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D82
+L Device:D_Small D82
 U 1 1 5E19FDFA
 P 11525 11125
 F 0 "D82" V 11571 11057 50  0000 R CNN
@@ -3357,24 +3105,6 @@ Wire Wire Line
 Connection ~ 11375 10200
 Wire Wire Line
 	11375 10200 11375 10825
-Wire Wire Line
-	11525 9350 11100 9350
-Connection ~ 11100 9350
-Wire Wire Line
-	11100 9350 10675 9350
-Wire Wire Line
-	10675 9975 11100 9975
-Connection ~ 11100 9975
-Wire Wire Line
-	11100 9975 11525 9975
-Wire Wire Line
-	11525 11225 11100 11225
-Connection ~ 11100 11225
-Wire Wire Line
-	11100 11225 10675 11225
-Connection ~ 11100 10600
-Wire Wire Line
-	11100 10600 11525 10600
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX85
 U 1 1 5E19FE1B
@@ -3387,7 +3117,7 @@ F 3 "" H 11450 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D85
+L Device:D_Small D85
 U 1 1 5E19FE21
 P 11950 9250
 F 0 "D85" V 11996 9182 50  0000 R CNN
@@ -3411,7 +3141,7 @@ F 3 "" H 11450 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D86
+L Device:D_Small D86
 U 1 1 5E19FE2E
 P 11950 9875
 F 0 "D86" V 11996 9807 50  0000 R CNN
@@ -3435,7 +3165,7 @@ F 3 "" H 11450 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D87
+L Device:D_Small D87
 U 1 1 5E19FE3B
 P 11950 10500
 F 0 "D87" V 11996 10432 50  0000 R CNN
@@ -3459,7 +3189,7 @@ F 3 "" H 11450 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D88
+L Device:D_Small D88
 U 1 1 5E19FE48
 P 11950 11125
 F 0 "D88" V 11996 11057 50  0000 R CNN
@@ -3482,18 +3212,6 @@ Wire Wire Line
 Connection ~ 12225 10200
 Wire Wire Line
 	12225 10200 12225 9575
-Wire Wire Line
-	11950 9350 11525 9350
-Wire Wire Line
-	11525 9975 11950 9975
-Wire Wire Line
-	11950 11225 11525 11225
-Wire Wire Line
-	11525 10600 11950 10600
-Connection ~ 11525 9350
-Connection ~ 11525 9975
-Connection ~ 11525 10600
-Connection ~ 11525 11225
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX77
 U 1 1 5E19FE5E
@@ -3506,7 +3224,7 @@ F 3 "" H 10600 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D77
+L Device:D_Small D77
 U 1 1 5E19FE64
 P 11100 11750
 F 0 "D77" V 11146 11682 50  0000 R CNN
@@ -3530,7 +3248,7 @@ F 3 "" H 11025 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D83
+L Device:D_Small D83
 U 1 1 5E19FE71
 P 11525 11750
 F 0 "D83" V 11571 11682 50  0000 R CNN
@@ -3546,11 +3264,6 @@ Wire Wire Line
 	11800 11450 11800 10825
 Wire Wire Line
 	11375 10825 11375 11450
-Wire Wire Line
-	11525 11850 11100 11850
-Connection ~ 11100 11850
-Wire Wire Line
-	11100 11850 10675 11850
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX89
 U 1 1 5E19FE7D
@@ -3563,7 +3276,7 @@ F 3 "" H 11450 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D89
+L Device:D_Small D89
 U 1 1 5E19FE83
 P 11950 11750
 F 0 "D89" V 11996 11682 50  0000 R CNN
@@ -3577,9 +3290,6 @@ Wire Wire Line
 	11950 11650 12025 11650
 Wire Wire Line
 	12225 11450 12225 10825
-Wire Wire Line
-	11950 11850 11525 11850
-Connection ~ 11525 11850
 Connection ~ 11375 10825
 Connection ~ 11800 10825
 Connection ~ 12225 10825
@@ -3595,7 +3305,7 @@ F 3 "" H 10600 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D78
+L Device:D_Small D78
 U 1 1 5E19FE96
 P 11100 12375
 F 0 "D78" V 11146 12307 50  0000 R CNN
@@ -3619,7 +3329,7 @@ F 3 "" H 11025 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D84
+L Device:D_Small D84
 U 1 1 5E19FEA3
 P 11525 12375
 F 0 "D84" V 11571 12307 50  0000 R CNN
@@ -3647,7 +3357,7 @@ F 3 "" H 11450 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D90
+L Device:D_Small D90
 U 1 1 5E19FEB2
 P 11950 12375
 F 0 "D90" V 11996 12307 50  0000 R CNN
@@ -3676,7 +3386,7 @@ F 3 "" H 11875 8975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D91
+L Device:D_Small D91
 U 1 1 5E19FEC3
 P 12375 9250
 F 0 "D91" V 12421 9182 50  0000 R CNN
@@ -3700,7 +3410,7 @@ F 3 "" H 11875 9600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D92
+L Device:D_Small D92
 U 1 1 5E19FED0
 P 12375 9875
 F 0 "D92" V 12421 9807 50  0000 R CNN
@@ -3724,7 +3434,7 @@ F 3 "" H 11875 10225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D93
+L Device:D_Small D93
 U 1 1 5E19FEDD
 P 12375 10500
 F 0 "D93" V 12421 10432 50  0000 R CNN
@@ -3748,7 +3458,7 @@ F 3 "" H 11875 10850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D94
+L Device:D_Small D94
 U 1 1 5E19FEEA
 P 12375 11125
 F 0 "D94" V 12421 11057 50  0000 R CNN
@@ -3771,14 +3481,6 @@ Wire Wire Line
 Connection ~ 12650 10200
 Wire Wire Line
 	12650 10200 12650 9575
-Wire Wire Line
-	12375 9350 11950 9350
-Wire Wire Line
-	11950 9975 12375 9975
-Wire Wire Line
-	12375 11225 11950 11225
-Wire Wire Line
-	11950 10600 12375 10600
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX95
 U 1 1 5E19FEFC
@@ -3791,7 +3493,7 @@ F 3 "" H 11875 11475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D95
+L Device:D_Small D95
 U 1 1 5E19FF02
 P 12375 11750
 F 0 "D95" V 12421 11682 50  0000 R CNN
@@ -3805,8 +3507,6 @@ Wire Wire Line
 	12375 11650 12450 11650
 Wire Wire Line
 	12650 11450 12650 10825
-Wire Wire Line
-	12375 11850 11950 11850
 Connection ~ 12650 10825
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX96
@@ -3820,7 +3520,7 @@ F 3 "" H 11875 12100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:D_Small-Device-Orbit-rescue D96
+L Device:D_Small D96
 U 1 1 5E19FF12
 P 12375 12375
 F 0 "D96" V 12421 12307 50  0000 R CNN
@@ -3835,32 +3535,8 @@ Wire Wire Line
 Wire Wire Line
 	12650 12075 12650 11450
 Connection ~ 12650 11450
-Connection ~ 11950 9350
-Connection ~ 11950 9975
-Connection ~ 11950 10600
-Connection ~ 11950 11225
-Connection ~ 11950 11850
-Wire Wire Line
-	10675 12475 11100 12475
-Connection ~ 11100 12475
-Wire Wire Line
-	11100 12475 11525 12475
-Connection ~ 11525 12475
-Wire Wire Line
-	11525 12475 11950 12475
-Connection ~ 11950 12475
-Wire Wire Line
-	11950 12475 12375 12475
-Connection ~ 10675 9975
-Connection ~ 10675 9350
-Wire Wire Line
-	10675 10600 11100 10600
-Connection ~ 10675 10600
-Connection ~ 10675 11225
-Connection ~ 10675 11850
-Connection ~ 10675 12475
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C7
+L Device:C_Small C7
 U 1 1 5B8ACCEF
 P 2425 3775
 F 0 "C7" H 2517 3821 50  0000 L CNN
@@ -3878,12 +3554,8 @@ Text GLabel 4100 2650 2    50   Input ~ 0
 ROW3
 Text GLabel 4100 2550 2    50   Input ~ 0
 ROW4
-Wire Wire Line
-	1300 3675 1575 3675
-Wire Wire Line
-	1300 3875 1575 3875
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C5
+L Device:C_Small C5
 U 1 1 5E134CAC
 P 2075 11450
 F 0 "C5" H 2167 11496 50  0000 L CNN
@@ -3893,16 +3565,6 @@ F 3 "~" H 2075 11450 50  0001 C CNN
 	1    2075 11450
 	1    0    0    -1  
 $EndComp
-Connection ~ 2075 11350
-Connection ~ 2075 11550
-Wire Wire Line
-	2075 11550 2475 11550
-Wire Wire Line
-	2075 11350 2475 11350
-Wire Wire Line
-	1350 11350 2075 11350
-Wire Wire Line
-	1350 11550 2075 11550
 Text GLabel 3725 14000 2    50   Input ~ 0
 R-D+
 Text GLabel 3725 13900 2    50   Input ~ 0
@@ -3910,12 +3572,12 @@ R-D-
 Text GLabel 3750 6300 2    50   Input ~ 0
 D-
 $Comp
-L k8split-rescue:R_Small-Device-Orbit-rescue R3
+L Device:R_Small R3
 U 1 1 5E4A5B3E
 P 3650 6300
 F 0 "R3" V 3600 6175 50  0000 C CNN
 F 1 "22" V 3650 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3650 6300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3650 6300 50  0001 C CNN
 F 3 "~" H 3650 6300 50  0001 C CNN
 	1    3650 6300
 	0    1    1    0   
@@ -3935,7 +3597,6 @@ F 5 "CUI INC" H 2975 14000 50  0001 L BNN "Field5"
 $EndComp
 Wire Wire Line
 	3375 14100 3375 14300
-Connection ~ 3375 14300
 $Comp
 L UJ2-AH-4-SMT:USB_A_SMT USB1
 U 1 1 5E4F36D0
@@ -3953,9 +3614,8 @@ Text GLabel 3750 6400 2    50   Input ~ 0
 D+
 Wire Wire Line
 	3400 6500 3400 6700
-Connection ~ 3400 6700
 $Comp
-L k8split-rescue:C_Small-Device-Orbit-rescue C6
+L Device:C_Small C6
 U 1 1 5E1DFA40
 P 1575 3775
 F 0 "C6" H 1667 3821 50  0000 L CNN
@@ -3965,12 +3625,6 @@ F 3 "~" H 1575 3775 50  0001 C CNN
 	1    1575 3775
 	1    0    0    -1  
 $EndComp
-Connection ~ 1575 3675
-Wire Wire Line
-	1575 3675 2425 3675
-Connection ~ 1575 3875
-Wire Wire Line
-	1575 3875 2425 3875
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5E3013F7
@@ -4049,7 +3703,7 @@ F 3 "~" H 7100 15150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J3
+L Connector_Generic:Conn_01x01 J3
 U 1 1 5E2DC692
 P 6075 6625
 F 0 "J3" H 6154 6667 50  0000 L CNN
@@ -4062,7 +3716,7 @@ $EndComp
 NoConn ~ 5875 6625
 NoConn ~ 5875 6800
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J6
+L Connector_Generic:Conn_01x01 J6
 U 1 1 5E2DC6A0
 P 6075 7150
 F 0 "J6" H 6154 7192 50  0000 L CNN
@@ -4074,7 +3728,7 @@ F 3 "~" H 6075 7150 50  0001 C CNN
 $EndComp
 NoConn ~ 5875 7150
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J4
+L Connector_Generic:Conn_01x01 J4
 U 1 1 5E2DC699
 P 6075 6800
 F 0 "J4" H 6154 6842 50  0000 L CNN
@@ -4085,7 +3739,7 @@ F 3 "~" H 6075 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J5
+L Connector_Generic:Conn_01x01 J5
 U 1 1 5E2DC6AF
 P 6075 6975
 F 0 "J5" H 6154 7017 50  0000 L CNN
@@ -4108,7 +3762,7 @@ F 3 "~" H 6425 7375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J7
+L Connector_Generic:Conn_01x01 J7
 U 1 1 5E3F5C7F
 P 6075 14175
 F 0 "J7" H 6154 14217 50  0000 L CNN
@@ -4121,7 +3775,7 @@ $EndComp
 NoConn ~ 5875 14175
 NoConn ~ 5875 14350
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J10
+L Connector_Generic:Conn_01x01 J10
 U 1 1 5E3F5C87
 P 6075 14700
 F 0 "J10" H 6154 14742 50  0000 L CNN
@@ -4133,7 +3787,7 @@ F 3 "~" H 6075 14700 50  0001 C CNN
 $EndComp
 NoConn ~ 5875 14700
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J8
+L Connector_Generic:Conn_01x01 J8
 U 1 1 5E3F5C8E
 P 6075 14350
 F 0 "J8" H 6154 14392 50  0000 L CNN
@@ -4144,7 +3798,7 @@ F 3 "~" H 6075 14350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L k8split-rescue:Conn_01x01-Connector_Generic-Orbit-rescue J9
+L Connector_Generic:Conn_01x01 J9
 U 1 1 5E3F5C94
 P 6075 14525
 F 0 "J9" H 6154 14567 50  0000 L CNN
@@ -4155,4 +3809,48 @@ F 3 "~" H 6075 14525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5875 14525
+Wire Wire Line
+	2275 1550 2900 1550
+Wire Wire Line
+	2275 1750 2900 1750
+Wire Wire Line
+	2075 1550 2075 1875
+Wire Wire Line
+	2075 9125 2075 9450
+Wire Wire Line
+	2275 9125 2900 9125
+Wire Wire Line
+	2275 9325 2900 9325
+Wire Wire Line
+	1100 11550 2475 11550
+Wire Wire Line
+	1100 11350 2475 11350
+Wire Wire Line
+	1050 3675 2425 3675
+Wire Wire Line
+	1050 3875 2425 3875
+Wire Wire Line
+	9050 1775 12250 1775
+Wire Wire Line
+	9050 3650 12250 3650
+Wire Wire Line
+	9050 4275 12250 4275
+Wire Wire Line
+	9050 3025 12250 3025
+Wire Wire Line
+	9175 10600 12375 10600
+Wire Wire Line
+	9050 2400 12250 2400
+Wire Wire Line
+	9025 4900 12250 4900
+Wire Wire Line
+	9175 9975 12375 9975
+Wire Wire Line
+	9175 9350 12375 9350
+Wire Wire Line
+	9175 11225 12375 11225
+Wire Wire Line
+	9175 11850 12375 11850
+Wire Wire Line
+	9150 12475 12375 12475
 $EndSCHEMATC
