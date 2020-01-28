@@ -1,4 +1,4 @@
-17345736632457209
+17334621930675679
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75753,69 +75753,6 @@ transformer flyback
 0
 10
 10
-Type-C
-12401598E4#2A
-
-
-0
-28
-28
-Type-C
-HRO-TYPE-C-31-M-12
-
-
-0
-16
-13
-Type-C
-HRO-TYPE-C-31-M-12-Assembly
-
-
-0
-16
-13
-Type-C
-HRO-TYPE-C-31-M-12-HandSoldering
-
-
-0
-16
-13
-Type-C
-HRO-TYPE-C-31-M-13
-
-
-0
-16
-13
-Type-C
-USB_C_GCT_USB4085
-
-
-0
-20
-17
-Type-C
-Wurth-632723300011
-
-
-0
-32
-27
-Type-C
-Wurth-632723300011-HandSoldering
-
-
-0
-30
-26
-Type-C
-Wurth-632723300011-MaximumExtensionMount
-
-
-0
-32
-27
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -76629,6 +76566,13 @@ kms3
 0
 0
 cad
+l
+
+
+0
+0
+0
+cad
 left
 
 
@@ -76707,6 +76651,13 @@ ppp
 0
 cad
 pppp
+
+
+0
+0
+0
+cad
+r
 
 
 0
