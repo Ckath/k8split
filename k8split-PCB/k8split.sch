@@ -192,8 +192,8 @@ Text Notes 19800 15900 0    50   ~ 0
 2019-12-28
 Text Notes 22250 15900 0    50   ~ 0
 0.1
-Text Notes 18700 15075 0    50   ~ 0
-Credits to \nOrbit(x) by ai03 - Schematic and project fork base\nEverything else Orbit was based on
+Text Notes 18700 15225 0    50   ~ 0
+Credits to \nOrbit(x) by ai03 - Schematic and project fork base\nEverything else Orbit was based on\ntrifelife for mental support\nwhoever made that obscure smd usb model and footprint
 Text Notes 5675 5350 0    50   ~ 0
 Indicator LEDs\n
 Wire Wire Line
@@ -220,36 +220,24 @@ Text Notes 5675 11650 0    50   ~ 0
 Backlight Control
 Wire Notes Line
 	675  8250 13950 8250
-Wire Notes Line
-	675  12825 13950 12825
 Text Notes 7775 8350 0    50   ~ 0
 Switch Matrix\n
 Wire Notes Line
 	675  15275 13950 15275
 Wire Notes Line
 	13950 8250 13950 15275
-Text Notes 5675 12925 0    50   ~ 0
-Indicator LEDs\n
 Wire Notes Line
 	7750 8250 7750 15275
 Text Notes 5675 14075 0    50   ~ 0
 Extra Hardware
 Text Notes 13050 7650 0    50   ~ 10
 LEFT HAND SCHEMATIC
-Text Notes 11100 15225 0    50   ~ 10
-RIGHT HAND SCHEMATIC\n\nPower net changes:\nVCC -> VDD\nVBUS -> VDC\nGND -> GNDA\n+5V -> +5VA\nto prevent kicad from complaining about no connections between halves
+Text Notes 13025 15250 0    50   ~ 10
+RIGHT HAND SCHEMATIC
 Wire Notes Line
 	9175 5250 9175 7700
 Wire Notes Line
 	5650 6400 9175 6400
-Wire Notes Line
-	9175 12825 9175 15275
-Wire Notes Line
-	5650 13975 9175 13975
-Text Notes 7775 12925 0    50   ~ 0
-Passthrough Holes\n
-Text Notes 7775 5350 0    50   ~ 0
-Passthrough Holes
 Text GLabel 9550 925  0    50   Input ~ 0
 COL0
 Text GLabel 9975 925  0    50   Input ~ 0
@@ -3853,4 +3841,12 @@ Wire Wire Line
 	9175 11850 12375 11850
 Wire Wire Line
 	9150 12475 12375 12475
+Text Notes 5675 12925 0    50   ~ 0
+Indicator LEDs\n
+Wire Notes Line
+	675  12825 13950 12825
+Wire Notes Line
+	5650 13975 9175 13975
+Wire Notes Line
+	9175 12825 9175 15275
 $EndSCHEMATC
