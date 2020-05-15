@@ -192,8 +192,8 @@ Text Notes 19800 15900 0    50   ~ 0
 2019-12-28
 Text Notes 22250 15900 0    50   ~ 0
 0.1
-Text Notes 18700 15225 0    50   ~ 0
-Credits to \nOrbit(x) by ai03 - Schematic and project fork base\nEverything else Orbit was based on\ntrifelife for mental support\nwhoever made that obscure smd usb model and footprint
+Text Notes 18700 15250 0    50   ~ 0
+Credits to \nOrbit(x) by ai03 - some of the schematic labeling and libraries\ntrifelife - mental support\nwhoever made that obscure smd usb model and footprint\nmy local liquor store for the long nights of mundane layout, design and assembly
 Text Notes 5675 5350 0    50   ~ 0
 Indicator LEDs\n
 Wire Wire Line
