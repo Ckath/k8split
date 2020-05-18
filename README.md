@@ -1,4 +1,4 @@
-# k8split
+![logo](logo.png)
 shoddy split keyboard for personal use, after ruining my [chinese split keyboard](http://xahlee.info/kbd/ly092_mini_keyboard.html) I attempted to recreate what I wanted from that, minus all the annoyances.
 
 ## features
@@ -12,6 +12,13 @@ shoddy split keyboard for personal use, after ruining my [chinese split keyboard
 - regular FULL SIZED USB PORT
 - powered by [QMK](https://github.com/qmk/qmk_firmware)
 - (nearly (woops)) identical matrix wiring on both halves, only keymaps differ
+
+## pics
+### keyboards
+![left](k8split_left.png)
+![right](k8split_right.png)
+### pcb 
+![board](k8split_board.jpg)
 
 ## mistakes in rev 0.1
 - ground of programming header unconnected on right half \
