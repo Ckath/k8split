@@ -31,4 +31,14 @@ this can be fixed with a workaround in qmk's keymaps, not really a problem
 probably not, it was a one off for myself anyway. it's still fully functional.
 
 ## ordering
-theres an `ORDER` folder in the pcb project, which contains the component list I used (wouldnt recommend using these I picked them at cheapest price). all the other generated files needed for ordering are in `gerber/`. the limits are pretty tight so not every pcb manufacturer will put up with this, I ordered them at jlcpcb and they came in fine, cheap too.
+theres an `ORDER` folder in the pcb project, which contains the component list I used. all the other generated files needed for ordering are in `gerber`.
+
+### advice
+keep in mind this is a personal board made just for myself, it's more up for reference/show than it is meant for people to actually use it. that said, some advice if you do think about making one:
+- the pre mentioned component list is just what I happened to find cheap one night, what you pick shouldnt matter too much as long as the values are right.
+- do yourself a favor and get all the smd parts soldered on with your order, they're all on the bottom side as this was originally my intention too. trust me it isnt great fun to do by hand especially the MCU circuitry.
+- the tolerances are pretty tight in places so I cant guarentee every pcb manufacturer will put up with it, I personally used jlcpcb, with which they turned out perfect. 
+- because this is a caseless/plateless board (unless you cad something up), make sure to get switches with alignment pins to make your life easier. the ttc silent switches I used did not.
+- to keep things easy I recommend a flat profile keycap set like dsa
+- the nearly fully smd usb connector is a china find, you can find them on the regular places as "smd usb a female", the right ones should only have one shield pad on either side.
+- the 'case' hardware used is a standard M3 standoff set, anything works.
