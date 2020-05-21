@@ -10,7 +10,7 @@ shoddy split keyboard for personal use, after ruining my [chinese split keyboard
 - no case or plate, only M3 holes
 - halves are separate keyboards with their own MCU and USB, none of that link cable rubbish 
 - regular FULL SIZED USB PORT
-- powered by [QMK](https://github.com/qmk/qmk_firmware)
+- powered by [QMK](https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/k8split)
 - (nearly (woops)) identical matrix wiring on both halves, only keymaps differ
 
 ## pics
