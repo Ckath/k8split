@@ -1,0 +1,3 @@
+[submodule "k8split-FIRMWARE/tmk_core"]
+	path = k8split-FIRMWARE/tmk_core
+	url = https://github.com/tmk/tmk_core.git
