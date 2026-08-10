@@ -44,7 +44,8 @@ static matrix_row_t matrix_debouncing[MATRIX_ROWS];
                      ((PIND & COLD_MASK) << 8))
 
 
-void matrix_init(void)
+void
+matrix_init(void)
 {
 	/* init io */
     UNSELECT_ROWS();
@@ -65,7 +66,8 @@ void matrix_init(void)
     }
 }
 
-uint8_t matrix_scan(void)
+uint8_t
+matrix_scan(void)
 {
     for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
         SELECT_ROW(i);
