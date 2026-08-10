@@ -28,9 +28,6 @@ SOFTWARE.
 #include "matrix.h"
 
 /* debouncing */
-#ifndef DEBOUNCE
-#   define DEBOUNCE	5
-#endif
 static bool debouncing = false;
 static uint16_t debouncing_time = 0;
 
