@@ -63,10 +63,6 @@ F_USB = 16000000
 # Target architecture (see library "Board Types" documentation).
 ARCH = AVR8
 
-# Interrupt driven control endpoint task(+60)
-OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
-
-
 # Boot Section Size in *bytes*
 #   Teensy halfKay   512
 #   Teensy++ halfKay 1024
@@ -75,10 +71,7 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 #   USBaspLoader     2048
 OPT_DEFS += -DBOOTLOADER_SIZE=4096
 
-
 # Build Options
-#   comment out to disable the options.
-#
 BOOTMAGIC_ENABLE = no   # Virtual DIP switch configuration(+1000)
 MOUSEKEY_ENABLE = yes   # Mouse keys(+4700)
 EXTRAKEY_ENABLE = yes   # Audio control and System control(+450)
