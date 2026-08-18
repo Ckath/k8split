@@ -572,7 +572,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerber",
+      "plot": "/home/cat/cad/k8split/k8split-PCB/ORDER/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
