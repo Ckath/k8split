@@ -19,4 +19,6 @@ if you thought you'd save a couple bux by buying atmega32u4s from china directly
 avrdude -c stk500v1 -p m32u4 -P /dev/ttyACM0 -b 19200 -U flash:w:bootloader_atmega32u4_1.0.0.hex:i
 # set fuses to 0xFF, 0xD9, 0xF3, this makes the reset button behave to get back into DFU
 avrdude -c stk500v1 -p m32u4 -P /dev/ttyACM0 -b 19200 -U lfuse:w:0xFF:m -U hfuse:w:0xD9:m -U efuse:w:0xF3:m
+# if it doesnt want to write, force erase, seems to be required for freshly flashed dfu chips
+sudo dfu-programmer atmega32u4 erase --force
 ```
