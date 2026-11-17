@@ -10,7 +10,7 @@ for the previous more scuffed and QMK version see [rev0.1](https://github.com/Ck
 	- no weird thumbclusters
 	- plenty bonus keys to add what you miss
 - no case or plate, only M3 holes
-- halves are linked hardwired to central controller (over VGA)
+- halves are linked hardwired to central controller, VGA connector, HDB15 cable
 - regular FULL SIZED USB PORT
 - powered by TMK
 
