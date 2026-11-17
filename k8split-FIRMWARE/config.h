@@ -39,7 +39,7 @@ SOFTWARE.
 #define ROW_MASK  0b00111111 /* PD0-PD5 row0-row5 */
 #define COLB_MASK 0b11111111 /* PB0-PB7 col0-col7 */
 #define COLF_MASK 0b11110000 /* PF4-PF6 col8-col11 */
-#define COLC_MASK 0b11000000 /* PC6-PF7 col12-col13 */
+#define COLC_MASK 0b11000000 /* PC6-PC7 col12-col13 */
 #define COLD_MASK 0b11000000 /* PD6-PD7 col14-col15 */
 
 /* can get away with lower since silent choc v2 */

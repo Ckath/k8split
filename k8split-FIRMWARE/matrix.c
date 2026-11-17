@@ -50,19 +50,19 @@ matrix_init(void)
 	/* init io */
     UNSELECT_ROWS();
     /* set all cols as inputs with pullup */
-    DDRB &= (uint8_t) ~COLB_MASK;
-    DDRF &= (uint8_t) ~COLF_MASK;
-    DDRC &= (uint8_t) ~COLC_MASK;
-    DDRD &= (uint8_t) ~COLD_MASK;
-    PORTB |= COLB_MASK;
-    PORTF |= COLF_MASK;
-    PORTC |= COLC_MASK;
-    PORTD |= COLD_MASK;
+    DDRB = (uint8_t) ~COLB_MASK;
+    DDRF = (uint8_t) ~COLF_MASK;
+    DDRC = (uint8_t) ~COLC_MASK;
+    DDRD = (uint8_t) ~COLD_MASK;
+    PORTB = COLB_MASK;
+    PORTF = COLF_MASK;
+    PORTC = COLC_MASK;
+    PORTD = COLD_MASK;
 
     /* initialize matrix state: all keys off */
-    for (uint8_t i=0; i < MATRIX_ROWS; i++) {
+    for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
         matrix[i] = 0;
-        matrix_debouncing[1] = 0;
+        matrix_debouncing[i] = 0;
     }
 }
 
