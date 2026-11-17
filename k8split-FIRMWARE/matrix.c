@@ -36,8 +36,8 @@ static matrix_row_t matrix[MATRIX_ROWS];
 static matrix_row_t matrix_debouncing[MATRIX_ROWS];
 
 /* col/row reading macros */
-#define SELECT_ROW(r) PORTD = (PORTD | ROW_MASK) & ~(1 << r)
-#define UNSELECT_ROWS() PORTD |= ROW_MASK
+#define SELECT_ROW(r) DDRD = (DDRD & ~ROW_MASK) | (1 << r)
+#define UNSELECT_ROWS() DDRD &= ~ROW_MASK
 #define READ_COLS() ~((PINB & COLB_MASK) | \
                      ((PINF & COLF_MASK) << 4) | \
                      ((PINC & COLC_MASK) << 6) | \
@@ -53,7 +53,7 @@ matrix_init(void)
     DDRB = (uint8_t) ~COLB_MASK;
     DDRF = (uint8_t) ~COLF_MASK;
     DDRC = (uint8_t) ~COLC_MASK;
-    DDRD = (uint8_t) ~COLD_MASK;
+    DDRD = (uint8_t) ~(COLD_MASK | ROW_MASK);
     PORTB = COLB_MASK;
     PORTF = COLF_MASK;
     PORTC = COLC_MASK;
@@ -71,7 +71,7 @@ matrix_scan(void)
 {
     for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
         SELECT_ROW(i);
-        _delay_us(5); /* delay for settling */
+        _delay_us(9); /* delay for settling */
         matrix_row_t cols = READ_COLS();
         if (matrix_debouncing[i] != cols) {
             matrix_debouncing[i] = cols;
