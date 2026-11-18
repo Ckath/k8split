@@ -1,4 +1,4 @@
-![logo](logo.png)
+![logo](logo2.png)
 shoddy split keyboard for personal use, after ruining my [chinese split keyboard](http://xahlee.info/kbd/ly092_mini_keyboard.html) I attempted to recreate what I wanted from that, minus all the annoyances.
 
 for the previous more scuffed and QMK version see [rev0.1](https://github.com/Ckath/k8split/tree/rev0.1)
@@ -24,12 +24,9 @@ for the previous more scuffed and QMK version see [rev0.1](https://github.com/Ck
 
 ## pics
 ### keyboards
-TODO
-<!-- ![left](k8split_left.png) -->
-<!-- ![right](k8split_right.png) -->
+![keeb](k8split2.png)
 ### pcb 
-TODO
-<!-- ![board](k8split_board.jpg) -->
+![board](k8split_board2.png)
 
 
 ## ordering
