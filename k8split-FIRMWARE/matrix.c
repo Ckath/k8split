@@ -71,7 +71,7 @@ matrix_scan(void)
 {
     for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
         SELECT_ROW(i);
-        _delay_us(9); /* delay for settling */
+        _delay_us(13); /* delay for settling */
         matrix_row_t cols = READ_COLS();
         if (matrix_debouncing[i] != cols) {
             matrix_debouncing[i] = cols;
